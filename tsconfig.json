@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+  "module": "commonjs",
+    "target": "es2017",
+    "lib": ["es2015", "dom"],
+    "outDir": "dist",
+    "rootDir": "cypress",
+    "moduleResolution": "node",
+    //"allowJs": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "experimentalDecorators": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "types": [
+      "cypress",
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"
+    ],
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    }
+  
+}

@@ -1,0 +1,10 @@
+{
+  "defaultCommandTimeout": 40000,
+  "execTimeout": 40000,
+  "pageLoadTimeout": 40000,
+  "requestTimeout": 40000,
+  "responseTimeout": 40000,
+  "video": false,
+  "ignoreTestFiles": "*.ts",
+  "testFiles": "**/*.feature"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "cypress_cucumber_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier-format": "prettier --config .prettierrc.yml '**/**/*.feature' --write",
+    "esLint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.7.0",
+    "cypress-cucumber-preprocessor": "^4.1.0",
+    "typescript": "^4.6.2",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-testing-library": "5.0.1", 
+    "lint-staged": "^12.2.1",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --cache --fix",
+    "*.{ts,tsx,css,md}": "prettier --write"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "nonGlobalStepBaseDir": "cypress/support/step_definitions"
+  }
+}
